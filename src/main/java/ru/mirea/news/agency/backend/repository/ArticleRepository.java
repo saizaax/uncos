@@ -1,0 +1,10 @@
+package ru.mirea.news.agency.backend.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.stereotype.Repository;
+import ru.mirea.news.agency.backend.entity.Article;
+
+@Repository
+public interface ArticleRepository extends JpaRepository<Article, Long>, JpaSpecificationExecutor<Article> {
+}
