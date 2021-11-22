@@ -2,7 +2,7 @@
 ## «UNCOS» — News Agency Website ⚡
 
 [![Spring](https://img.shields.io/badge/Java%20Spring-6DB33F?logo=spring&logoColor=white)](https://spring.io/)
-[![Docker](https://img.shields.io/badge/PostgreSQL-4169E1.svg?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1.svg?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![ReactJS](https://img.shields.io/badge/React.js-282C34?logo=react)](https://reactjs.org/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![SCSS](https://img.shields.io/badge/SCSS-CC6699?logo=sass&logoColor=white)](https://sass-lang.com/)
@@ -48,7 +48,7 @@
     docker-compose up --build --detach
     ```
 
-* Open web-browser and open 
+* Open in web-browser
     ```bash
     http://localhost:80/
     ```

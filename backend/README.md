@@ -1,6 +1,8 @@
-## API
- 
-<br>
+## Backend — Java Spring REST API
+
+[![Spring](https://img.shields.io/badge/Java%20Spring-6DB33F?logo=spring&logoColor=white)](https://spring.io/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1.svg?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Docker](https://img.shields.io/badge/Docker-%230db7ed.svg?logo=docker&logoColor=white)](https://www.docker.com/)
 
 **`*` — Requires authentication of `User` / `Moderator` / `Admin`**
 
