@@ -4,7 +4,7 @@ function NothingFound() {
   return (
     <section className="content">
       <div className="article-container">
-        <h1 style={{ margin: "0 10px" }}>
+        <h1 style={{ margin: "0 10px", color: "#fff" }}>
           По вашему запросу ничего не найдено :(
         </h1>
       </div>

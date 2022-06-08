@@ -41,7 +41,7 @@ export function HeaderInfoProvider(props) {
       .then((response) =>
         setCurrencies((prevState) => ({
           ...prevState,
-          btc: response.data.data.rates.USD,
+          btc: Number(response.data.data.rates.USD).toFixed(2),
         }))
       )
       .catch((error) => !axios.isCancel(error) && console.log(error))

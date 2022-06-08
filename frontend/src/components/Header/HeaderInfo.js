@@ -58,20 +58,10 @@ function HeaderInfo({ type }) {
             {time && weatherTemp && currencies ? (
               <>
                 <li className="list-item info-section__list-item">
-                  <i className="ri-calendar-todo-line"></i> {time}
+                  {time}
                 </li>
                 <li className="list-item info-section__list-item">
-                  <i className="ri-sun-cloudy-line"></i> Москва, {weatherTemp}°C
-                </li>
-                <li className="list-item info-section__list-item">
-                  <i className="ri-money-dollar-circle-line"></i>{" "}
-                  {currencies.usd}
-                </li>
-                <li className="list-item info-section__list-item">
-                  <i className="ri-money-euro-circle-line"></i> {currencies.eur}
-                </li>
-                <li className="list-item info-section__list-item">
-                  <i className="ri-bit-coin-line"></i> {currencies.btc} $
+                  Москва, {weatherTemp}°C
                 </li>
               </>
             ) : (

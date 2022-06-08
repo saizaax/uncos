@@ -44,20 +44,20 @@ function Footer() {
           <div className="footer-links">
             <div className="footer-links__container">
               <p className="footer-links__item">
-                <a href="https://github.com/xaazias">
+                <a href="https://github.com">
                   <i className="ri-github-fill"></i>
                 </a>
-                <a href="https://t.me/saizaax">
+                <a href="https://web.telegram.org/">
                   <i className="ri-telegram-fill"></i>
                 </a>
               </p>
               <p className="footer-links__item">
-                <a href="mailto: saizaax.off@gmail.com">
-                  saizaax.off@gmail.com
+                <a href="mailto: news@news.com">
+                  news@news.com
                 </a>
               </p>
               <p className="footer-links__item">
-                <a href="https://vk.com/saizaax">vk.com/saizaax</a>
+                <a href="https://vk.com/">vk.com/news</a>
               </p>
             </div>
           </div>
