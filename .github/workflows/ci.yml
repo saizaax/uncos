@@ -22,10 +22,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build frontend docker-image
-        run: docker build ./frontend/. --file Dockerfile --tag $FRONT_IMAGE_NAME
+        run: docker build frontend --tag $FRONT_IMAGE_NAME
 
       - name: Build backend docker-image
-        run: docker build ./backend/. --file Dockerfile --tag $BACK_IMAGE_NAME
+        run: docker build backend --tag $BACK_IMAGE_NAME
 
       - name: Log in to registry
         run: echo "$GH_PAT" | docker login $REGISTRY -u $GITHUB_ACTOR --password-stdin
