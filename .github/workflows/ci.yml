@@ -1,0 +1,43 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  REGISTRY: ghcr.io
+  FRONT_IMAGE_NAME: ghcr.io/saizaax/uncos-front
+  BACK_IMAGE_NAME: ghcr.io/saizaax/uncos-back
+  GH_PAT: ${{ secrets.GH_PAT }}
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Build frontend docker-image
+        run: docker build ./frontend --file Dockerfile --tag $FRONT_IMAGE_NAME
+
+      - name: Build backend docker-image
+        run: docker build ./backend --file Dockerfile --tag $BACK_IMAGE_NAME
+
+      - name: Log in to registry
+        run: echo "$GH_PAT" | docker login $REGISTRY -u $GITHUB_ACTOR --password-stdin
+
+      - name: Push images
+        run: |
+          docker tag $FRONT_IMAGE_NAME $FRONT_IMAGE_NAME:latest
+          docker tag $FRONT_IMAGE_NAME $FRONT_IMAGE_NAME:$GITHUB_RUN_NUMBER
+          docker push $FRONT_IMAGE_NAME:latest
+          docker push $FRONT_IMAGE_NAME:$GITHUB_RUN_NUMBER
+          
+          docker tag $BACK_IMAGE_NAME $BACK_IMAGE_NAME:latest
+          docker tag $BACK_IMAGE_NAME $BACK_IMAGE_NAME:$GITHUB_RUN_NUMBER
+          docker push $BACK_IMAGE_NAME:latest
+          docker push $BACK_IMAGE_NAME:$GITHUB_RUN_NUMBER
