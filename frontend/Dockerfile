@@ -1,4 +1,5 @@
-FROM node:14-alpine as build
+# Build
+FROM node:16-alpine as build
 WORKDIR /frontend
 
 ENV PATH /frontend/node_modules/.bin:$PATH
@@ -9,9 +10,13 @@ RUN npm i --silent
 COPY . ./
 RUN npm run build
 
+# Serve
 FROM nginx:latest
 COPY --from=build /frontend/build /usr/share/nginx/html
+
 RUN rm /etc/nginx/conf.d/default.conf
 COPY ./nginx.conf /etc/nginx/conf.d
-EXPOSE 80
+
+EXPOSE 88
+
 CMD ["nginx", "-g", "daemon off;"]
