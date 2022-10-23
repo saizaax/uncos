@@ -1,0 +1,47 @@
+version: "3.9"
+
+networks:
+  default:
+    external: false
+  traefik-gateway:
+    external: true
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=qwerty
+      - POSTGRES_PASSWORD=qwerty
+      - POSTGRES_DB=qwerty
+    networks:
+      - default
+    volumes:
+      - ./database/db.sql:/docker-entrypoint-initdb.d/db.sql
+      - uncos-postgres-data:/var/lib/postgresql/data
+
+  backend:
+    image: ghcr.io/saizaax/uncos-back:latest
+    networks:
+      - default
+    depends_on:
+      - postgres
+
+  frontend:
+    image: ghcr.io/saizaax/uncos-front:latest
+    depends_on:
+      - backend
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        - "traefik.port=80"
+        - "traefik.http.routers.uncos.rule=Host(`example.com`)"
+        - "traefik.http.routers.uncos.entrypoints=websecure"
+        - "traefik.http.routers.uncos.tls.certresolver=letsencrypt"
+        - "traefik.http.routers.uncos.tls=true"
+        - "traefik.http.services.uncos.loadbalancer.server.port=80"
+    networks:
+      - traefik-gateway
+      - default
+
+volumes:
+  uncos-postgres-data:
