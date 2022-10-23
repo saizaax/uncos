@@ -1,5 +1,5 @@
 # Build
-FROM node:16-alpine as build
+FROM node:14-alpine as build
 WORKDIR /frontend
 
 ENV PATH /frontend/node_modules/.bin:$PATH
