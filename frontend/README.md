@@ -11,12 +11,12 @@
 
 * Clone this repository
     ```bash
-    git clone https://github.com/xaazias/news-agency-coursework
+    git clone https://github.com/saizaax/uncos
     ```
 
 * Open terminal and navigate to repository directory
     ```bash
-    cd news-agency-coursework/frontend
+    cd uncos/frontend
     ```
 
 * Install the packages required for the project
@@ -40,7 +40,7 @@
 
 * Open terminal and navigate to repository directory
     ```bash
-    cd news-agency-coursework/frontend
+    cd uncos/frontend
     ```
 
 * Make production build with npm
@@ -56,17 +56,17 @@
 
 * Open terminal and navigate to repository directory
     ```bash
-    cd news-agency-coursework/frontend
+    cd uncos/frontend
     ```
 
 * Build Docker image
     ```bash
-    docker build -f Dockerfile.dev -t news-agency-frontend .
+    docker build -f Dockerfile.dev -t uncos-frontend .
     ```
 
 * Run Docker container
     ```bash
-    docker run -d -p 80:80 --name news-agency-frontend news-agency-frontend
+    docker run -d -p 80:80 --name uncos-frontend uncos-frontend
     ```
 
 * Open in web-browser

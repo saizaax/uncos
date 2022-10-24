@@ -4,6 +4,34 @@
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1.svg?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![Docker](https://img.shields.io/badge/Docker-%230db7ed.svg?logo=docker&logoColor=white)](https://www.docker.com/)
 
+### Run in Docker container
+
+* Download & Install [Docker / Docker Desktop](https://www.docker.com/products/docker-desktop)
+
+* Open terminal and navigate to repository directory
+    ```bash
+    cd uncos/backend
+    ```
+
+* Build Docker image
+    ```bash
+    docker build -f Dockerfile -t uncos-backend .
+    ```
+
+* Run Docker container
+    ```bash
+    docker run -d -p 8080:8080 --name uncos-backend uncos-backend
+    ```
+
+* Request with curl
+    ```bash
+    curl http://localhost:8080/api/v1/articles
+    ```
+
+<br>
+
+### API Docs
+
 **`*` — Requires authentication of `User` / `Moderator` / `Admin`**
 
 ### `GET` List of Articles

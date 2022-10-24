@@ -1,24 +1,23 @@
-![](https://i.imgur.com/9uRDzpY.png)
-## «UNCOS» — News Agency Website ⚡
+# UNCOS — News Agency Website ⚡
 
 [![](https://img.shields.io/website?down_message=offline&label=uncos.saizaax.xyz&up_message=online&url=http%3A%2F%2Funcos.saizaax.xyz%2F)](http://uncos.saizaax.xyz/) 
 [![Spring](https://img.shields.io/badge/Java%20Spring-6DB33F?logo=spring&logoColor=white)](https://spring.io/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1.svg?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![ReactJS](https://img.shields.io/badge/React.js-282C34?logo=react)](https://reactjs.org/)
+[![ReactJS](https://img.shields.io/badge/React.js-282C34?logo=react&logoColor=white)](https://reactjs.org/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![SCSS](https://img.shields.io/badge/SCSS-CC6699?logo=sass&logoColor=white)](https://sass-lang.com/)
 [![Docker](https://img.shields.io/badge/Docker-%230db7ed.svg?logo=docker&logoColor=white)](https://www.docker.com/)
+[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)](https://github.com/features/actions)
 
-### 🔎 Live Demo — [uncos.saizaax.xyz](http://uncos.saizaax.xyz/)
+![](preview.png)
 
-![](https://i.imgur.com/itfivSs.png)
-
-<br>
+<h3 align="center">
+✨ Preview • <a href="https://uncos.saizaax.xyz/">uncos.saizaax.xyz</a>
+</h3>
 
 ## Technologies
 
 ### Frontend
-- `HTML5 / CSS3`
 - `React.js`
 - `JavaScript`
 - `SCSS`
@@ -27,7 +26,6 @@
 - `Java Spring`
 - `PostgreSQL`
 - `JWT`
-- `REST API`
 
 <br>
 
@@ -37,12 +35,12 @@
 
 * Clone this repository
     ```bash
-    git clone https://github.com/xaazias/news-agency-coursework
+    git clone https://github.com/saizaax/uncos
     ```
 
 * Open terminal and navigate to repository directory
     ```bash
-    cd news-agency-coursework
+    cd uncos
     ```
 
 * Run docker-compose 
@@ -62,11 +60,6 @@
 
 <br>
 
-## Design
-[UNCOS — News Agency Design @ figma.com](https://www.figma.com/file/qcBJqCH7LcIDNSA4ZaxRBz/react-news-agency)
+## Contacts
 
-![](https://i.imgur.com/ynyk35S.png)
-
-## Credits
-
-2021 • Korolkov Aleksander • [@saizaax](https://t.me/saizaax) • saizaax.off@gmail.com
+2022 • Korolkov Alexander • [@saizaax](https://t.me/saizaax) • [saizaax.off@gmail.com](mailto:saizaax.off@gmail.com)
