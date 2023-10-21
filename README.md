@@ -1,6 +1,6 @@
 # UNCOS — News Agency Website ⚡
 
-[![](https://img.shields.io/website?down_message=offline&label=uncos.saizaax.xyz&up_message=online&url=http%3A%2F%2Funcos.saizaax.xyz%2F)](http://uncos.saizaax.xyz/) 
+[![](https://img.shields.io/website?down_message=offline&label=uncos.saizaax.dev&up_message=online&url=http%3A%2F%2Funcos.saizaax.dev%2F)](http://uncos.saizaax.dev/) 
 [![Spring](https://img.shields.io/badge/Java%20Spring-6DB33F?logo=spring&logoColor=white)](https://spring.io/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1.svg?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![ReactJS](https://img.shields.io/badge/React.js-282C34?logo=react&logoColor=white)](https://reactjs.org/)
@@ -12,7 +12,7 @@
 ![](preview.png)
 
 <h3 align="center">
-✨ Preview • <a href="https://uncos.saizaax.xyz/">uncos.saizaax.xyz</a>
+✨ Preview • <a href="https://uncos.saizaax.dev/">uncos.saizaax.dev</a>
 </h3>
 
 ## Technologies
